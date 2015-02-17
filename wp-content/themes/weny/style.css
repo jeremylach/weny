@@ -8,27 +8,26 @@ Theme Name: WENY
 }
 
 @font-face {
-    font-family: GeorgiaProLightItalic;
-    src: url("fonts/GeorgiaPro/GeorgiaPro-LightItalic.otf") format("opentype");
+    font-family: ChivoBlack;
+    src: url("fonts/chivo/Chivo-Black.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: MissionGothic;
-    src: url("fonts/MissionGothic/MissionGothicRegular.otf") format("opentype");
+    font-family: ChivoItalic;
+    src: url("fonts/chivo/Chivo-Italic.otf") format("opentype");
 }
 
 @font-face {
-    font-family: MissionGothicLight;
-    src: url("fonts/MissionGothic/MissionGothicLight.otf") format("opentype");
+    font-family: ChivoBlackItalic;
+    src: url("fonts/chivo/Chivo-BlackItalic.otf") format("opentype");
 }
+
 
 body {
     background-color: #070707;
     color: #DBDBDB;
     font-family: Chivo, sans-serif;
     font-size: 11px;
-    background: url(images/city_crop.jpg) 50% 0 fixed;
-    background-size: cover;
 }
 
 .dark {
@@ -48,12 +47,11 @@ h2, .price {
     color: #aaaaaa;
 }
 a {
-    color: #fff
+    color: #4CA4E0;
 }
 a:hover {
     text-decoration: none;
-    color: inherit;
-    opacity: .6;
+    color: #DBDBDB;
 }
 
 img {
@@ -112,18 +110,20 @@ img {
 #intro {
     
     height: auto;  
-    margin: 0 auto; 
+    /*margin: 0 auto; */
     width: 100%; 
     position: relative;
     text-align: center;
     /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
     /*padding: 200px 0;*/
+
+    background: url(images/city_crop.jpg) 50% 0 fixed;
 }
 
 #copy { 
     /*background: url(images/building.jpg) 50% 0 fixed; */
     height: auto;  
-    margin: 0 auto; 
+    /*margin: 0 auto; */
     width: 100%; 
     position: relative; 
     /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
@@ -140,8 +140,14 @@ img {
     /*width: 80%;*/
 }
 
+#interact {
+    background: url(images/city_crop.jpg) 50% 50% fixed;
+    min-height: 300px;
+}
+
 #main {
-    
+    /*background: url(images/city_crop.jpg) 50% 0 fixed;*/
+    /*background-size: cover;*/
 }
 
 .single .related {
@@ -392,36 +398,20 @@ img {
     padding-right: 0 !important;
 }
 
-.left-menu {
-    position: absolute;
-    top: 0px;
-    left: -240px;
-    width: 240px;
-    opacity: 1;
-    z-index: 999;
-    height: 100%;
-    padding-left: 15px;
-    padding-top: 12px;
-}
-.left-menu .link {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: block;
-}
 
 ul.social {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    float: right;    
 }
 ul.social li {
     display: inline-block;
 }
 ul.social li a:link, ul.social li a:visited {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 21px;
+    height: 18px;
     margin-right: 10px;
     text-indent: -999em;
     overflow: hidden;
@@ -433,73 +423,20 @@ ul.social li a:link:hover, ul.social li a:visited:hover {
     opacity: .7;
 }
 ul.social li.twitter a {
-    background-position: 0 0;
-}
-ul.social li.instagram a {
-    background-position: -94px 0;
+    background-position: -31px 0;
 }
 ul.social li.facebook a {
-    background-position: -46px 0;
-}
-ul.social li.tumblr a {
-    background-position: -140px 0;
-}
-
-.watch-filters {
-    display: none;
-    padding: 20px;
-    background-color: #7e7e7e;
-}
-.watch-filters .row {
-    margin: 0px;
-}
-
-.watch-filters .term-wrapper a:hover {
-    color: white;
-}
-
-.watch-filters .term-wrapper .toggle {
-    border-radius: 50%;
-    background-color: transparent;
-    width: 10px;
-    height: 10px;
-    border: 1px solid white;
-    display: inline-block;
-    margin-right: 7px;
-}
-
-.watch-filters .term-wrapper.active .toggle {
-    box-shadow: 1px 1px #7e7e7e inset;
-    background-color: white;
-}
-
-.watch-filters .row.manufacturers {
-    margin-bottom: 20px;
-}
-
-.watch-filters .header {
-    font-family: MissionGothic;
-    font-size: 11px;
-    color: #1a1a1a;
+    background-position: 0 0;
 }
 
 .site-footer {
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 100px;
-    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 12px;
 }
-
-.site-footer img {
-    width: auto;
-    opacity: .5;
-    margin-bottom: 30px;
-}
-.site-footer .footer-copy {
-    width: 60%;
+/*.site-footer .footer-copy {
     margin: 0 auto;
-    margin-bottom: 80px;
-}
+}*/
 
 .col-xs-9ths,
 .col-sm-9ths,

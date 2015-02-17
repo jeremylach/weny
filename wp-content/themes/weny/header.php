@@ -51,5 +51,5 @@
 		<?php wp_nav_menu(array('theme_location' => 'socialnav', 'menu_class' => 'navbar-nav', 'container' => false, 'items_wrap' => '<ul class="social">%3$s</ul>')); ?>
 	</div>--><!-- #navbar -->
 
-		<div id="main" class="site-main"> <!--container-fluid-->
+		<div id="main" class="site-main container-fluid" data-type="background"> <!--container-fluid-->
 		

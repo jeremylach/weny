@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 
-<section id="intro" class='content-box dark' data-speed="6" data-type="background">
-    <div class="container content-box">
+<section id="intro" class='content-box dark row' data-speed="6" data-type="background">
+    <div class="content-box">
         <img src='wp-content/themes/weny/images/banana.jpg' />
     </div>
 </section>
 
-<section id="copy" class='content-box container-fluid' data-speed="6" data-type="background">
+<section id="copy" class='content-box row' data-speed="6" data-type="background">
     
         <div class='inner'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum tellus quis nulla placerat dignissim. Ut at erat ut mi fringilla lacinia sed eu sem. Curabitur at ipsum at mi dictum sagittis. Fusce ullamcorper diam id pulvinar molestie. Cras erat tellus, porttitor at posuere vitae, dapibus sed orci. Duis sed risus lectus. Integer a ullamcorper massa, nec placerat lacus.
@@ -31,7 +31,7 @@ tum tempus.
     </div>
 </section>
 
-<section id="interact" class='content-box container-fluid dark' data-speed="6" data-type="background">
+<section id="interact" class='content-box row dark' data-speed="6" data-type="background">
     <div class='inner'>
         Interact
     </div>

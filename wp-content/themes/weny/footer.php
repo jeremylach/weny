@@ -2,8 +2,11 @@
 
 		<footer id="colophon" class="site-footer row" role="contentinfo">
 			<div class="site-info">
-				&copy; <?php echo date("Y"); ?> Watch Enthusiasts of New York | <a href=''>Contact Us</a> | <a href=''>Site by <a href='http://iconinteractive.com">ICON Interactive</a>
-			</div><!-- .site-info -->
+				&copy; <?php echo date("Y"); ?> Watch Enthusiasts of New York | <a href=''>Contact Us</a> | Site by <a href='http://iconinteractive.com'>ICON Interactive</a>
+			<!-- .site-info -->
+			
+				<?php wp_nav_menu(array('theme_location' => 'socialnav', 'menu_class' => 'navbar-nav', 'container' => false, 'items_wrap' => '<ul class="social">%3$s</ul>')); ?>
+			</div>
 		</footer><!-- #colophon -->
 
 
