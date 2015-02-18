@@ -5,7 +5,7 @@
     <div class='arrow down'></div>
     <div class="dark">
         <!--<div class=''> <!-- col-md-8 col-md-offset-2 col-xs-offset-2 col-xs-8-->
-            <img src='wp-content/themes/weny/images/white_logo.png' />
+            <img src='/wp-content/themes/weny/images/white_logo.png' />
         <!--</div>-->
     </div>
     <div class='arrow up'></div>
@@ -33,6 +33,7 @@ Vivamus a metus condimentum, venenatis quam in, blandit elit. In hac habitasse p
 </section>
 
 <section id="interact" class='content-box row' data-speed="6" data-type="background">
+    <div class='arrow down'></div>
     <div class='dark'>
         <div class='headline'>Membership</div>
         <div class='inner'>

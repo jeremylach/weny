@@ -2,20 +2,20 @@
 
 <?php get_template_part("content", "logo"); ?>
 
-<div id="copy" class='row listing news-events'>
-    <div class='headline'>News and Events</div>
+<div id="copy" class='row forum'>
+    <div class='headline'>Forum</div>
 <?php
-    echo "<div class=''>";
+    echo "<ul class=''>";
         if (have_posts()) : while (have_posts()) : the_post();
-            echo "<div class='row'>";
+            echo "<li>";
+                echo "<a href='".get_permalink()."'>".$post->post_title."</a> - ";
+                echo "<span class='author'>".get_the_author_meta("user_email")."</span> - ";
                 echo "<span class='date'>";
                     echo get_the_date("M d, Y h:i A", $post->ID);
                 echo "</span>";
-                echo "<a href='".get_permalink()."'>".$post->post_title."</a>";
-                echo "-";
-            echo "</div>";
+            echo "</li>";
         endwhile;
-    echo "</div>";
+    echo "</ul>";
     endif;
 ?>
 </div>

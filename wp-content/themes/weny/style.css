@@ -103,7 +103,7 @@ img {
 }
 
 .arrow.up {
-    bottom: 0px;
+    bottom: -1px;
     background-image: url(images/arrow_up.png);
 }
 .arrow.down {
@@ -134,8 +134,13 @@ img {
     background-color: #7e7e7e
 }*/
 
+.logo-box {
+    height: 180px;
+    max-height: 180px;
+    position: relative;
+}
+
 #intro {
-    
     height: auto;  
     /*margin: 0 auto; */
     /*width: 100%; */
@@ -147,7 +152,7 @@ vertical-align: middle;
     background: url(images/city_crop.jpg) 50% 0 fixed;
 }
 
-#intro img {
+#intro img, .logo-box img {
     /*width: 100%;*/
    /* width: 50%;*/
     position: absolute;
@@ -157,6 +162,13 @@ vertical-align: middle;
     margin-left: -230px;
     margin-top: -67px;
 }
+
+.logo-box img {
+    max-width: 230px;
+    margin-left: -115px;
+    margin-top: -33px;
+}
+
 
 @media (max-width: 486px) {
     #intro img {
@@ -189,6 +201,56 @@ vertical-align: middle;
     width: 65%;
 }
 
+.listing {
+    padding: 90px !important;  
+}
+
+.listing .date {
+    font-size: 13px;
+}
+
+.listing a {
+    display: block;
+    font-size: 17px;
+}
+
+.news-events .row, .forum li {
+    padding: 4px 0px;
+}
+
+.listing a:hover, .forum a:hover {
+    color: #4CA4E0;
+    opacity: .7;
+}
+
+.forum {
+    font-size: 13px;
+    padding: 90px !important;
+}
+.forum .date {
+    
+}
+
+.forum .author {
+    font-family: ChivoBlack;
+}
+
+.forum ul {
+    padding: 0px;
+}
+
+.forum a {
+    font-size: 13px;
+}
+
+.news-events .headline {
+    background-image: url(images/news_events_headline.png);
+}
+
+.forum .headline {
+    background-image: url(images/forum_headline.png);
+}
+
 .headline {
     display: block;
     margin-left: -158px;
@@ -196,7 +258,7 @@ vertical-align: middle;
     left: 50%;
     position: absolute;
     background: transparent url(images/our_story.png) center center no-repeat;
-    height: 12px;
+    height: 14px;
     width: 316px;
     text-indent: -999999px;
 }
