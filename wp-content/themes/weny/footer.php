@@ -3,7 +3,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
 				<div class='col-md-8 col-xs-8'>
-				&copy; <?php echo date("Y"); ?> Watch Enthusiasts of New York | <a href=''>Contact Us</a> | Site by <a href='http://iconinteractive.com'>ICON Interactive</a>
+				&copy; <?php echo date("Y"); ?> Watch Enthusiasts of New York | <a href='#contact' class='fancybox'>Contact Us</a> | Site by <a href='http://iconinteractive.com'>ICON Interactive</a>
 			<!-- .site-info -->
 				</div>
 				<div class='col-md-4'>
@@ -18,13 +18,16 @@
 	<!--</div>-->
 
 	<?php wp_footer(); ?>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<div id='contact' style='display: none;'>
+		<?php gravity_form(2, false, false, false, '', true, 1); ?>
+	</div>
+	
 	<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.infinitescroll.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/behaviors/manual-trigger.js"></script>
+    <!--<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.infinitescroll.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/behaviors/manual-trigger.js"></script>-->
 
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/weny.js"></script>
 

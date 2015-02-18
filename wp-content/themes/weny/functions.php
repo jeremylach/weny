@@ -7,6 +7,30 @@ function theme_setup() {
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 
+function jquery_remove() {
+    if (!is_admin()) {
+        wp_deregister_script('jquery');                                     // De-Register jQuery
+        wp_register_script('jquery', '', '', '', true);                     // Register as 'empty', because we manually insert our script in header.php
+    }
+}
+
+add_action('init', 'jquery_remove');
+
+
+add_filter( 'gform_ajax_spinner_url', 'tgm_io_custom_gforms_spinner' );
+/**
+ * Changes the default Gravity Forms AJAX spinner.
+ *
+ * @since 1.0.0
+ *
+ * @param string $src  The default spinner URL.
+ * @return string $src The new spinner URL.
+ */
+function tgm_io_custom_gforms_spinner( $src ) {
+
+    return get_stylesheet_directory_uri() . '/images/321.GIF';
+    
+}
 
 //Define custom image sizes here
 //REFERENCE: https://codex.wordpress.org/Function_Reference/add_image_size

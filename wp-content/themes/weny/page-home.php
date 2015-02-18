@@ -37,8 +37,8 @@ Vivamus a metus condimentum, venenatis quam in, blandit elit. In hac habitasse p
     <div class='dark'>
         <div class='headline'>Membership</div>
         <div class='inner'>
-            Thank you for your interest in becoming a member!<br />
-            We will send you an email shortly detailing the next steps.
+            <div class='copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum tellus quis nulla placerat dignissim. Ut at erat ut mi fringilla lacinia sed eu sem. Curabitur at ipsum at mi dictum sagittis. </div>
+            <?php gravity_form(1, false, false, false, '', true, 1); ?>
         </div>
     </div>
 </section>
