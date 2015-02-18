@@ -35,15 +35,15 @@
 	
 	<div class='topnav'>
 		<div class='logged-out <?php echo $loggedout; ?>'>
-			<div class='button'>News & Upcoming Events</div>
-			<div class='button'>Forum</div>
-			<div class='button'>Member Login</div>
+			<a class='button' href='/news-events'>News & Upcoming Events</a>
+			<a class='button' href='#'>Forum</a>
+			<a class='button' href='/wp-logout.php' class='button'>Logout</a>
 		</div>
 		
 		<div class='logged-in <?php echo $loggedin; ?>' >
-			<div class='button'>News & Upcoming Events</div>
-			<div class='button'>Forum</div>
-			<div class='button'>Logout</div>
+			<a class='button' href='/news-events'>News & Upcoming Events</a>
+			<a class='button' href='#'>Forum</a>
+			<a class='button' href='/wp-logout.php' class='button'>Logout</a>
 		</div>
 		
 	</div>
