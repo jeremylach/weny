@@ -20,7 +20,7 @@
 	<?php wp_footer(); ?>
 	
 	<div id='contact' style='display: none;'>
-		<img src='/wp-content/themes/weny/images/black_logo.png' />
+		<img class='logo' src='/wp-content/themes/weny/images/black_logo.png' />
 		<div class='tagline'>Contact WENY</div>
 		<?php gravity_form(2, false, false, false, '', true, 1); ?>
 	</div>
@@ -28,7 +28,7 @@
 	global $statusMsg;
 ?>
 	<div id='login' style='display: none;'>
-		<img src='/wp-content/themes/weny/images/black_logo.png' />
+		<img class='logo' src='/wp-content/themes/weny/images/black_logo.png' />
 		<div class='tagline'>Sign in to WENY</div>
 		<form name="loginform" id="loginform" method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
 

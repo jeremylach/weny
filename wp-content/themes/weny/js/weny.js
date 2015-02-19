@@ -13,8 +13,10 @@ $(document).ready(function() {
     $("#input_2_2").attr("placeholder", "Enter Message");
 
     $("#gform_1").submit(function() {
-        //$("#interact .copy").fadeOut();
-        //$(".gform_wrapper").css("border", "none");
+        //$.fancybox.update();
+        //event.preventDefault();
+    });
+    $("#gform_2").submit(function() {
         //event.preventDefault();
     });
 
@@ -35,15 +37,6 @@ $(document).ready(function() {
         $("#interact .copy").fadeOut();
     });
 
-    $("#gform_2").submit(function() {
-        //$("#interact .copy").fadeOut();
-        //$(".gform_wrapper").css("border", "none");
-        //event.preventDefault();
-        //$(".popup .fancybox-inner").css("overflow", "hidden");
-        ///$.fancybox.update();
-    });
-    
-
     $("#login form").submit(function() {
         event.preventDefault();
 
@@ -55,11 +48,11 @@ $(document).ready(function() {
 
         //Validate
         if(user_email == "" || !IsEmail(user_email)) {
-            $(".email_error").html("Please enter a valid email address");
+            $(".email_error").html("Enter a valid email address");
             valid = false;
         }
         if(user_pw == "") {
-            $(".pw_error").html("Please enter a password");
+            $(".pw_error").html("Enter a password");
             valid = false;
         }
         if(!valid) {

@@ -322,6 +322,12 @@ vertical-align: middle;
     #interact .ginput_container {
         width: 175px !important;
     }
+    .validation_message {
+        font-size: 11px !important;
+    }
+    .popup textarea {
+        max-height: 140px !important;
+    }
 }
 
 .validation_error {
@@ -443,8 +449,9 @@ margin-right: -10px;*/
     margin: 0 auto;
     text-align: center;
 }
-.popup img {
-    
+.popup img.logo {
+    width: 100%;
+    max-width: 180px;
 }
 .popup input, .popup textarea {
     padding: 20px;

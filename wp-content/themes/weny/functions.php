@@ -209,7 +209,7 @@ function ajax_login() {
                         $statusMsg = $user_data->get_error_message();
                     }
                 } else {
-                    $statusMsg = 'The password you entered is invalid';
+                    $statusMsg = 'Invalid Password';
                 }
             } else {
                 $statusMsg = 'Email address not recognized';
