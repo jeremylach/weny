@@ -481,7 +481,7 @@ margin-right: -10px;*/
 @media (max-width: 486px) {
     .popup input, .popup textarea {
         padding: 0px;
-        margin-top: 0px;
+        margin-top: 2px;
     }
     .popup .tagline {
         padding: 10px 0px !important;
