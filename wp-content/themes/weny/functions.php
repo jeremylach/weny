@@ -4,8 +4,11 @@ function theme_setup() {
     register_nav_menu('primary', 'Main Menu');
     register_nav_menu('socialnav', 'Social Menu');
     add_theme_support( 'post-thumbnails' );
+    
 }
 add_action( 'after_setup_theme', 'theme_setup' );
+
+add_filter('show_admin_bar', '__return_false');
 
 function jquery_remove() {
     if (!is_admin()) {
