@@ -319,6 +319,9 @@ vertical-align: middle;
     #interact .gform_wrapper {
         width: 94% !important;    
     }
+    #interact .ginput_container {
+        width: 175px !important;
+    }
 }
 
 .validation_error {
