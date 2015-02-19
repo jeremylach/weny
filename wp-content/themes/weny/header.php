@@ -35,9 +35,7 @@
 	
 	<div class='topnav'>
 		<div class='logged-out <?php echo $loggedout; ?>'>
-			<a class='button' href='/news-events'>News & Upcoming Events</a>
-			<a class='button' href='#'>Forum</a>
-			<a class='button' href='/wp-logout.php' class='button'>Logout</a>
+			<a class='button fancybox' href='#login'>Member Login</a>
 		</div>
 		
 		<div class='logged-in <?php echo $loggedin; ?>' >

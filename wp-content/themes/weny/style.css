@@ -218,7 +218,7 @@ vertical-align: middle;
     padding: 4px 0px;
 }
 
-.listing a:hover, .forum a:hover {
+.listing a:hover, .forum a:hover, #login a:hover {
     color: #4CA4E0;
     opacity: .7;
 }
@@ -432,7 +432,7 @@ margin-right: -10px;*/
     margin-bottom: 5px;*/
     margin-top: -27px;
 }
-#contact {
+.popup {
     font-size: 16px;
     color: #333333;
     font-family: Chivo;
@@ -440,17 +440,17 @@ margin-right: -10px;*/
     margin: 0 auto;
     text-align: center;
 }
-#contact img {
+.popup img {
     
 }
-#contact input, #contact textarea {
+.popup input, .popup textarea {
     padding: 20px;
     width: 100%;
     max-height: 150px;
     margin-top: 5px;
 }
 
-#contact .button {
+.popup .button {
     border-radius: 10px;
     background-color: #4CA4E0;
     color: white;
@@ -462,7 +462,16 @@ margin-right: -10px;*/
     margin-top: -10px;
 }
 
-#contact #tagline {
+#login .button {
+    margin-top: 5px;
+}
+
+.forgot-pw {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.popup .tagline {
     font-size: 13px;
     font-family: Georgia;
     font-style: italic;
