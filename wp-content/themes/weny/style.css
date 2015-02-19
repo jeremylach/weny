@@ -333,7 +333,7 @@ vertical-align: middle;
         font-size: 11px !important;
     }
     .popup textarea {
-        max-height: 140px !important;
+        max-height: 120px !important;
     }
 }
 
@@ -481,7 +481,7 @@ margin-right: -10px;*/
 @media (max-width: 486px) {
     .popup input, .popup textarea {
         padding: 0px;
-        margin-top: 2px;
+        margin-top: 4px;
     }
     .popup .tagline {
         padding: 10px 0px !important;
