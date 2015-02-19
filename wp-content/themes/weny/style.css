@@ -223,10 +223,21 @@ vertical-align: middle;
     opacity: .7;
 }
 
-.forum {
+#main .forum, #main .news-events {
     font-size: 13px;
-    padding: 90px !important;
+    padding: 90px;
+    text-align: left;
 }
+
+@media (max-width: 750px) {
+    #main .forum {
+        padding: 90px 25px 50px 25px !important;
+    }
+    #main .news-events {
+        padding: 90px 50px 50px 50px !important;
+    }
+}
+
 .forum .date {
     
 }
@@ -306,10 +317,6 @@ vertical-align: middle;
 #interact .inner .copy {
     width: 50%;
     margin: 0 auto;
-}
-
-@media (max-width: 486px) {
-    
 }
 
 @media (max-width: 992px) {
