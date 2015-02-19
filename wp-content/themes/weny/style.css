@@ -476,7 +476,22 @@ margin-right: -10px;*/
     font-size: 16px;
     border: none;
     padding: 25px 0px;
-    margin-top: -10px;
+}
+
+@media (max-width: 486px) {
+    .popup input, .popup textarea {
+        padding: 0px;
+        margin-top: 0px;
+    }
+    .popup .tagline {
+        padding: 10px 0px !important;
+    }
+    .popup ul {
+        margin-bottom: 5px;
+    }
+    .popup .button {
+        padding: 5px 0px;
+    }
 }
 
 #login .button {
