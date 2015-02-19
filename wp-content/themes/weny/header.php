@@ -44,7 +44,7 @@
 		
 		<div class='logged-in <?php echo $loggedin; ?>' >
 			<a class='button' href='/news-events'>News & Upcoming Events</a>
-			<a class='button' href='#'>Forum</a>
+			<a class='button' href='/watches'>Forum</a>
 			<a class='button' id="logout" href='#' class='button'>Logout</a>
 		</div>
 	</div>
