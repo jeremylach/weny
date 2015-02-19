@@ -50,7 +50,7 @@ add_action('init', 'image_sizes', 0);
 
 function custom_post_type_init() {
     $post_types = array(
-        array("slug" => "watch", "plural" => "Watches", "singular" => "Watch", "rewrite" => "watch", "public" => true, "archive" => true, "supports" => array('title', 'editor'), "taxonomies"=>array())
+        array("slug" => "watch", "plural" => "Watches", "singular" => "Watch", "rewrite" => "watches", "public" => true, "archive" => true, "supports" => array('title', 'editor'), "taxonomies"=>array())
     );  
     foreach ($post_types as $pt) {
         $supports = array('title', 'editor', 'post_tags', 'thumbnail', 'excerpt', "comments");
