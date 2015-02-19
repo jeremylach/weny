@@ -1,3 +1,7 @@
+<?php
+//process_login();
+?>
+
 <!DOCTYPE html>
 <!--[if IE 7]>
 <html class="ie ie7" <?php language_attributes(); ?>>
@@ -41,9 +45,8 @@
 		<div class='logged-in <?php echo $loggedin; ?>' >
 			<a class='button' href='/news-events'>News & Upcoming Events</a>
 			<a class='button' href='#'>Forum</a>
-			<a class='button' href='/wp-logout.php' class='button'>Logout</a>
+			<a class='button' id="logout" href='#' class='button'>Logout</a>
 		</div>
-		
 	</div>
 	<!--<div id="socialnav" class="">
 		<?php wp_nav_menu(array('theme_location' => 'socialnav', 'menu_class' => 'navbar-nav', 'container' => false, 'items_wrap' => '<ul class="social">%3$s</ul>')); ?>

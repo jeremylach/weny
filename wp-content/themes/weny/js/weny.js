@@ -18,6 +18,17 @@ $(document).ready(function() {
         //event.preventDefault();
     });
 
+    $("#logout").click(function() {
+    
+        jQuery.post(
+            "../../../wp-admin/admin-ajax.php",
+            {'action': 'logout'},
+            function(response) {
+                window.location.reload();
+            }
+        );
+    });
+
     
     jQuery(document).bind('gform_confirmation_loaded', function(event, formId){
         console.log("confirm");    // code to be trigger when confirmation page is loaded
@@ -32,6 +43,52 @@ $(document).ready(function() {
         ///$.fancybox.update();
     });
     
+
+    $("#login form").submit(function() {
+        event.preventDefault();
+
+        $(".validation_message").html("");
+
+        var user_email = $('#user_login').val();
+        var user_pw = $("#user_pass").val();
+        var valid = true;
+
+        //Validate
+        if(user_email == "" || !IsEmail(user_email)) {
+            $(".email_error").html("Please enter a valid email address");
+            valid = false;
+        }
+        if(user_pw == "") {
+            $(".pw_error").html("Please enter a password");
+            valid = false;
+        }
+        if(!valid) {
+            return false;
+        }
+        var data = {
+            'action': 'login',
+            'log': user_email,
+            'pwd': user_pw
+        };
+    
+        jQuery.post(
+            "../../../wp-admin/admin-ajax.php",
+            data,
+            function(response) {
+                if (response == "success") {
+                    window.location.reload();
+                } else if(response.toLowerCase().indexOf("email") > -1) {
+                    $(".email_error").html(response);
+                } else {
+                    $(".pw_error").html(response);
+                }
+            }
+        );
+    });
+
+
+
+
 
     ////PARALLAX STUFF
     //http://untame.net/2013/04/how-to-integrate-simple-parallax-with-twitter-bootstrap/
@@ -55,3 +112,8 @@ $(document).ready(function() {
         }); // end window scroll
     });  // end section function
 });
+
+function IsEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
