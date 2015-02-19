@@ -1,8 +1,16 @@
 $(document).ready(function() {
     
-    $('.fancybox').fancybox();
+    $('.fancybox').fancybox( {
+        closeBtn : false,
+        wrapCSS: 'popup',
+        maxWidth: 430,
+        padding: [60, 40, 60, 40]
+    });
 
     $("#input_1_1").attr("placeholder", "Enter Email Address");
+    
+    $("#input_2_1").attr("placeholder", "Email Address");
+    $("#input_2_2").attr("placeholder", "Enter Message");
 
     $("#gform_1").submit(function() {
         //$("#interact .copy").fadeOut();
@@ -11,13 +19,19 @@ $(document).ready(function() {
     });
 
     
-
-    jQuery(document).bind('gform_post_data', function(event, formId){
+    jQuery(document).bind('gform_confirmation_loaded', function(event, formId){
         console.log("confirm");    // code to be trigger when confirmation page is loaded
+        $("#interact .copy").fadeOut();
     });
-    $( document ).ajaxStart(function() {
-        console.log('started');
+
+    $("#gform_2").submit(function() {
+        //$("#interact .copy").fadeOut();
+        //$(".gform_wrapper").css("border", "none");
+        //event.preventDefault();
+        //$(".popup .fancybox-inner").css("overflow", "hidden");
+        ///$.fancybox.update();
     });
+    
 
     ////PARALLAX STUFF
     //http://untame.net/2013/04/how-to-integrate-simple-parallax-with-twitter-bootstrap/

@@ -20,6 +20,8 @@
 	<?php wp_footer(); ?>
 	
 	<div id='contact' style='display: none;'>
+		<img src='/wp-content/themes/weny/images/black_logo.png' />
+		<div id='tagline'>Contact WENY</div>
 		<?php gravity_form(2, false, false, false, '', true, 1); ?>
 	</div>
 	
