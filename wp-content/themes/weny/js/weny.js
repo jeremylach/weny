@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $("#gform_1").submit(function() {
         //$.fancybox.update();
-        event.preventDefault();
+        //event.preventDefault();
     });
     $("#gform_2").submit(function() {
         //event.preventDefault();
