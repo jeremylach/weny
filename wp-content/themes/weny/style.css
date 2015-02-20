@@ -324,7 +324,7 @@ vertical-align: middle;
         width: 80%;
     }
     #interact .gform_wrapper {
-        width: 94% !important;    
+        width: 98% !important;    
     }
     #interact .ginput_container {
         width: 175px !important;
@@ -491,6 +491,9 @@ margin-right: -10px;*/
     }
     .popup .button {
         padding: 5px 0px;
+    }
+    #interact .gform_wrapper .gform_button {
+        margin: 0px;
     }
 }
 
