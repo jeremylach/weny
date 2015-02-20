@@ -1,16 +1,28 @@
 $(document).ready(function() {
     
+    var padding_array = [60, 40, 60, 40];
+    if($(window).width() < 482) {
+        padding_array = [30, 20, 30, 20];
+    }
+
     $('.fancybox').fancybox( {
         closeBtn : false,
         wrapCSS: 'popup',
         maxWidth: 430,
-        padding: [60, 40, 60, 40]
+        padding: padding_array,
+/*        afterLoad: function() {
+            $(".gform_wrapper input:visible, .gform_wrapper textarea").on("focus", (function() {
+                $(this).parent().parent().children(".validation_message").html("");
+            }));
+        }*/
     });
 
     $("#input_1_1").attr("placeholder", "Enter Email Address");
     
     $("#input_2_1").attr("placeholder", "Email Address");
     $("#input_2_2").attr("placeholder", "Enter Message");
+
+    
 
     $("#gform_1").submit(function() {
         //$.fancybox.update();
