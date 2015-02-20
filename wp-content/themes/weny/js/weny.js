@@ -9,7 +9,7 @@ $(document).ready(function() {
         closeBtn : false,
         wrapCSS: 'popup',
         maxWidth: 430,
-        padding: padding_array,
+        padding: padding_array//,
 /*        afterLoad: function() {
             $(".gform_wrapper input:visible, .gform_wrapper textarea").on("focus", (function() {
                 $(this).parent().parent().children(".validation_message").html("");
