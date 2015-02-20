@@ -180,6 +180,7 @@ function custom_post_type_init() {
                 'name' => $pt["plural"],
                 'singular_name' => $pt["singular"]
             ),
+            'menu_icon' => "dashicons-clock",
             'show_ui' => true,
             'publicly_queryable' => isset($pt["publicly_queryable"]) ? $pt["publicly_queryable"] : $public,
             'public' => isset($pt['public']) ? $pt['public'] : false,
