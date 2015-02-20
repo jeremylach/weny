@@ -36,9 +36,11 @@
 		if (is_user_logged_in()) {
 			$loggedout = "hidden";
 			$loggedin = "";
+			$authorid = get_current_user_id();
 		} else {
 			$loggedout = "";
 			$loggedin = "hidden";
+			$authorid = "";
 		}
 	?>
 </head>
@@ -53,6 +55,7 @@
 		<div class='logged-in <?php echo $loggedin; ?>' >
 			<a class='button' href='/news-events'>News & Upcoming Events</a>
 			<a class='button' href='/watches'>Forum</a>
+			<a class='button' href='/wp-admin/edit.php?post_type=watch&author=<?php echo $authorid; ?>'>My Posts</a>
 			<a class='button' id="logout" href='#' class='button'>Logout</a>
 		</div>
 	</div>
