@@ -66,13 +66,13 @@ img {
     font-size: 12px;
 }
 
-.topnav .button {
+.topnav .button, .forum .button {
     display: inline-block;
     padding: 10px;
     background-color: #4CA4E0;
     color: #070707;
 }
-.topnav .button:hover {
+.topnav .button:hover, .forum .button:hover {
     cursor: pointer;
     color: #4CA4E0;
     background-color: rgba(0,0,0,0.7);
@@ -252,6 +252,18 @@ vertical-align: middle;
 
 .forum a {
     font-size: 13px;
+}
+
+.forum .button {
+    float: left;
+    margin-top: -50px;
+}
+
+@media (max-width: 530px) {
+    .forum .button {
+        float: left;
+        margin-top: -80px;
+    }
 }
 
 .news-events .headline {
