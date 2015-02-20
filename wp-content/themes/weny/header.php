@@ -1,5 +1,7 @@
 <?php
-//process_login();
+    if(!is_front_page() && !is_user_logged_in()) {
+        login_redirect();
+    }
 ?>
 
 <!DOCTYPE html>

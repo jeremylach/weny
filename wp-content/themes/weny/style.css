@@ -163,7 +163,7 @@ vertical-align: middle;
     margin-top: -67px;
 }
 
-.logo-box img {
+.logo-box img.logo {
     max-width: 230px;
     margin-left: -115px;
     margin-top: -33px;
@@ -552,3 +552,27 @@ ul.social li.facebook a {
 /*.site-footer .footer-copy {
     margin: 0 auto;
 }*/
+
+.single h1 {
+    font-size: 22px;
+    font-family: Chivo;
+    color: #333;
+    margin: 0px 0px 15px 0px;
+    text-transform: none;
+}
+
+.single img.alignleft {
+    margin: 10px 15px 10px 0px;
+    float: left;
+}
+.single img.alignright {
+    margin: 10px 0px 10px 15px;
+    float: right;
+}
+.single img {
+    margin: 10px;
+}
+
+.single p {
+    line-height: 1.7;
+}

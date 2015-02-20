@@ -3,7 +3,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
 				<div class='col-md-8 col-xs-8'>
-				&copy; <?php echo date("Y"); ?> Watch Enthusiasts of New York | <a href='#contact' class='fancybox'>Contact Us</a> | Site by <a href='http://iconinteractive.com'>ICON Interactive</a>
+				&copy; <?php echo date("Y"); ?> Watch Enthusiasts of New York | <a href='#contact' class='fancybox'>Contact Us</a>
 			<!-- .site-info -->
 				</div>
 				<div class='col-md-4'>

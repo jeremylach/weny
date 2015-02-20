@@ -1,9 +1,3 @@
-<?php
-    if(!is_user_logged_in()) {
-        login_redirect();
-    }
-?>
-
 <?php get_header(); ?>
 
 <?php get_template_part("content", "logo"); ?>
