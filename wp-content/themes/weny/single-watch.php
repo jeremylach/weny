@@ -17,7 +17,18 @@
             <?php the_title(); ?>
         </h1>
         <?php the_content(); ?>
-<?php
+
+        <?php
+            $gallery = get_field("photos");
+            if($gallery) {
+                foreach ($gallery as $p) {
+                    echo "<a href='".$p['url']."' class='fancybox' rel='gallery'>";
+                        echo "<img src='".$p['sizes']['medium']."' />";
+                    echo "</a>";
+                }
+            }
+        ?>
+<?php   
     endwhile;
     endif;
 ?>
