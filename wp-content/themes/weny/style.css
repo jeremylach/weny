@@ -66,13 +66,14 @@ img {
     font-size: 12px;
 }
 
-.topnav .button, .forum .button {
+.topnav .button, .forum .button, .forgot-password .button {
     display: inline-block;
     padding: 10px;
     background-color: #4CA4E0;
     color: #070707;
+    border: none;
 }
-.topnav .button:hover, .forum .button:hover {
+.topnav .button:hover, .forum .button:hover, .forgot-password .button:hover {
     cursor: pointer;
     color: #4CA4E0;
     background-color: rgba(0,0,0,0.7);
@@ -277,6 +278,10 @@ vertical-align: middle;
     background-image: url(images/forum_headline.png);
 }
 
+.forgot-password .headline {
+    background-image: url(images/reset_pw_headline.png);
+}
+
 .headline {
     display: block;
     margin-left: -158px;
@@ -455,7 +460,7 @@ margin-right: -10px;*/
     position: absolute;
     color: #4CA4E0;
     padding: 0px;
-    margin-top: -14px;
+    margin-top: -16px;
     margin-left: 7px;
 }
 .popup #field_2_2 .validation_message {
@@ -475,7 +480,7 @@ margin-right: -10px;*/
     width: 100%;
     max-width: 180px;
 }
-.popup input, .popup textarea {
+.popup input, .popup textarea, .forgot-password input {
     padding: 20px;
     width: 100%;
     max-height: 150px;
@@ -590,4 +595,13 @@ ul.social li.facebook a {
 
 .single p {
     line-height: 1.7;
+}
+
+.forgot-password {
+    font-size: 14px;
+}
+
+.forgot-password .validation_message {
+    margin-top: -35px;
+    margin-left: 21px;
 }

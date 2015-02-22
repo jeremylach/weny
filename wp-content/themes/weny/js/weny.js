@@ -22,7 +22,6 @@ $(document).ready(function() {
     $("#input_2_1").attr("placeholder", "Email Address");
     $("#input_2_2").attr("placeholder", "Enter Message");
 
-    
 
     $("#gform_1").submit(function() {
         //$.fancybox.update();
@@ -92,6 +91,21 @@ $(document).ready(function() {
     });
 
 
+    $(".forgot-password #provide_email").submit(function() {
+        
+
+        var valid = true;
+
+        $(".validation_message").html("");
+
+        var user_email = $('#request_email').val();
+        if(user_email == "" || !IsEmail(user_email)) {
+            $(".email_error").html("Enter a valid email address");
+            valid = false;
+        }
+
+        return valid;
+    });
 
 
 

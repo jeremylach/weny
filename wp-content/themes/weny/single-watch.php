@@ -27,6 +27,8 @@
                     echo "</a>";
                 }
             }
+
+            comments_template();
         ?>
 <?php   
     endwhile;

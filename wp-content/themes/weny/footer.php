@@ -46,7 +46,7 @@
 				<input type="submit" name="wp-submit" id="wp-submit" class="button" value="Sign In">
 				<input type="hidden" name="redirect_to" value="/">
 			
-			<a href="?lostpassword=1" class="forgot-pw">Forgot password?</a>
+			<a href="/forgot-password?lostpassword=1" class="forgot-pw">Forgot password?</a>
 		</form>
 	</div>
 	

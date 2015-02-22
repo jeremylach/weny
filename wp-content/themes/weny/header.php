@@ -1,5 +1,5 @@
 <?php
-    if(!is_front_page() && !is_user_logged_in()) {
+    if(!is_page("forgot-password") && !is_front_page() && !is_user_logged_in()) {
         login_redirect();
     }
 ?>
