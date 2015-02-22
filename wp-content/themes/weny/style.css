@@ -176,6 +176,9 @@ vertical-align: middle;
         margin-left: -150px;
         margin-top: -43px;
     }
+    .logo-box img.logo {
+        margin-top: -5px;
+    }
 }
 
 #copy { 
