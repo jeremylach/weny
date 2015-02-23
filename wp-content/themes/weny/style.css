@@ -150,7 +150,7 @@ img {
     /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
     /*padding: 100px 0;*/
 vertical-align: middle;
-    background: url(images/city_crop.jpg) 50% 0 fixed;
+    background: url(images/city_crop.jpg) 50% 7% fixed;
 }
 
 #intro img, .logo-box img {
