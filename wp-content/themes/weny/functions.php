@@ -438,7 +438,8 @@ function weny_reset_password_email( $user_email, $unresponsive = false ) {
       <title>[Watch Enthusiasts of New York] Password Reset</title>
     </head>
     <body>
-       <p>Someone requested that the password be reset for the your Watch Enthusiasts of New York account (' . $user_email . '). If this was a mistake, just ignore this email and nothing will happen. To reset your password, <a href="' . $reset_url . '">click here</a>.</p>
+       <p>Someone requested that the password be reset for the your Watch Enthusiasts of New York account (' . $user_email . '). If this was a mistake, just ignore this email and nothing will happen.</p>
+       <p>To reset your password, <a href="' . $reset_url . '">click here</a>.</p>
     </body>
     </html>
     ';
