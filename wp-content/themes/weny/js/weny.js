@@ -107,6 +107,20 @@ $(document).ready(function() {
         return valid;
     });
 
+    $("#commentform").submit(function() {
+        var valid = true;
+
+        $(".validation_message").remove();
+
+        var content = $('textarea#comment').val();
+        if(content == "") {
+            $(".comment-form-comment").append("<div class='validation_message comment_error'>Enter some text</div>");
+            valid = false;
+        }
+
+        return valid;
+    });
+
 
 
     ////PARALLAX STUFF

@@ -450,3 +450,38 @@ function weny_reset_password_email( $user_email, $unresponsive = false ) {
     //$headers .= 'Bcc: updates@prod4ever.com' . "\r\n";
     return wp_mail($user_info->user_email, $subject, $message, $headers);
 }
+
+function weny_comment( $comment, $args, $depth ) {
+    $GLOBALS['comment'] = $comment;
+    switch( $comment->comment_type ) :
+    case 'pingback' :
+    case 'trackback' :
+    default : ?>
+        <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+            <article <?php comment_class(); ?> class="comment">
+
+        <div class="comment-body">
+            <div class="">
+                <span class="author"><?php comment_author_email(); ?></span> - 
+                <span class=""><?php comment_date("M d, Y h:i A"); ?></span>
+                <?php comment_text(); ?>
+            </div><!-- .vcard -->
+        </div><!-- comment-body -->
+       
+        <footer class="comment-footer">
+            
+            <div class="reply"><?php 
+                comment_reply_link( array_merge( $args, array( 
+                'reply_text' => 'Reply',
+                'after' => ' ', 
+                'depth' => $depth,
+                'max_depth' => $args['max_depth'] 
+                ) ) ); ?>
+            </div><!-- .reply -->
+        </footer><!-- .comment-footer -->
+       
+        </article><!-- #comment-<?php comment_ID(); ?> -->
+    <?php // End the default styling of comment
+    break;
+    endswitch;
+}

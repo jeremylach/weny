@@ -3,6 +3,7 @@
 <?php get_template_part("content", "logo"); ?>
 
 <div id="copy" class='row forum single'>
+    <div class='arrow down'></div>
     <div class='headline'>Forum</div>
 
 <?php
