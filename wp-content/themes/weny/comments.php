@@ -5,10 +5,11 @@
 ?>
 
 <div id="comments" class="comments-area row">
-<div class='comments-headline'>Comments</div>
+
 	
 	<?php if ( have_comments() ) : ?>
 		<!--<h1>Replies</h1>-->
+		<div class='comments-headline'>Comments</div>
 		<ul class="comment-list">
 			<?php
 				wp_list_comments( array(
