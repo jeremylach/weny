@@ -51,7 +51,7 @@ a {
 }
 a:hover {
     text-decoration: none;
-    color: #DBDBDB;
+    /*color: #DBDBDB;*/
 }
 
 img {

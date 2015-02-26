@@ -27,7 +27,7 @@
     <div class='dark'>
         <div class='headline'>Membership</div>
         <div class='inner'>
-            <div class='copy'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dictum tellus quis nulla placerat dignissim. Ut at erat ut mi fringilla lacinia sed eu sem. Curabitur at ipsum at mi dictum sagittis. </div>
+            <div class='copy'><?php the_field("membership_copy"); ?></div>
             <?php gravity_form(1, false, false, false, '', true, 1); ?>
         </div>
     </div>
