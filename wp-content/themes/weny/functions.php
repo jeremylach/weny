@@ -36,7 +36,7 @@ function wp_admin_bar_my_custom_account_menu( $wp_admin_bar ) {
     if ( 0 != $user_id ) {
         /* Add the "My Account" menu */
         $avatar = get_avatar( $user_id, 28 );
-        $howdy = sprintf( __('Welcome, %1$s'), $current_user->display_name );
+        $howdy = sprintf( __('Welcome, %1$s'), $current_user->user_email );
         $class = empty( $avatar ) ? '' : 'with-avatar';
          
         $wp_admin_bar->add_menu( array(
