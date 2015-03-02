@@ -3,6 +3,7 @@
 <?php get_template_part("content", "logo"); ?>
 
 <div id="copy" class='row listing news-events'>
+    <div class='arrow down'></div>
     <div class='headline'>News and Events</div>
 <?php
     echo "<div class=''>";

@@ -3,6 +3,7 @@
 <?php get_template_part("content", "logo"); ?>
 
 <div id="copy" class='row forum'>
+    <div class='arrow down'></div>
     <div class='headline'>Forum</div>
     <a href='/wp-admin/post-new.php?post_type=watch' class='button'>Add Post</a>
 <?php
